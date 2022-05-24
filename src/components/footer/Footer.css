@@ -1,0 +1,62 @@
+.footerContainer{
+    width: 100%;
+    padding: 40px;
+    background: var(--color-black);
+}
+
+.footerContainer .linksSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footerContainer .linksSection div{
+    display: block;
+    text-align: left;
+
+}
+
+.footerContainer .linksSection div p{
+    font-weight: 600;
+    color: var(--color-grey);
+    margin-bottom: 15px;
+}
+
+.footerContainer .linksSection div a{
+    display: block;
+    color: var(--color-white);
+    font-size: 0.9em;
+    font-weight: 200;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.footerContainer .linksSection div a:hover{
+    text-decoration: underline;
+}
+
+.infoSection{
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.footerContainer .infoSection p{
+    font-weight: 600;
+    color: var(--color-grey);
+    margin-bottom: 15px;
+}
+
+.footerContainer .infoSection div{
+    width: 100%;
+    display: flex;
+}
+
+.footerContainer .infoSection div .icon{
+    filter: invert(1);
+    font-size: 2em;
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.bottomNavbarContainer{
+    width: 100%;
+    padding: 10px 40px;
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+}
+
+.bottomNavbarContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomNavbarContainer div a,
+.bottomNavbarContainer div span{
+    color: var(--color-white);
+}
+
+.bottomNavbarContainer div span{
+    margin: 0 40px;
+    font-weight: 200;
+    font-family: var(--font-Poppins);
+}
+
+.bottomNavbarContainer div a{
+    font-family: var(--font-Montserrat);
+    font-weight: 100;
+    letter-spacing: 2px;
+}

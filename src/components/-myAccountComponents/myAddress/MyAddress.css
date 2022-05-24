@@ -1,0 +1,201 @@
+.myAddressContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myAddressContainer .heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.myAddressContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-weight: 200;
+    font-size:2.5em ;
+}
+
+.myAddressContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-weight: 200;
+}
+
+.myAddressContainer form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.myAddressContainer form .inputDetails,
+.myAddressContainer form  .otherDetails
+{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.myAddressContainer form  .otherDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.myAddressContainer form  .otherDetails #set{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.myAddressContainer form .inputDetails span
+{
+    position: absolute;
+    top: -20px ;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.myAddressContainer form .inputDetails input,
+.myAddressContainer form .inputDetails select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    padding: 0 5px;
+    transition:var(--transition);
+}
+
+.myAddressContainer form .inputDetails input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.myAddressContainer form .inputDetails.change #cBtn,
+.myAddressContainer form .inputDetails.change .cPassword  #uBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    cursor: pointer;
+    color: var(--color-black);
+    text-transform: uppercase;
+    width: 50px;
+}
+
+.myAddressContainer form .inputDetails.change{
+    margin-bottom: 100px;
+}
+
+.myAddressContainer form .inputDetails.change .cPassword{
+    margin-top: 40px;
+    position: relative;
+}
+
+.myAddressContainer form .radioDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.myAddressContainer form .radioDetails input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.myAddressContainer form .radioDetails a{
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.myAddressContainer form .btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.myAddressContainer form .btnContainer .btn,
+.myAddressContainer form .btnContainer input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.myAddressContainer form .btnContainer .btn{
+    border: 1px solid var(--color-black);
+    background: transparent;
+}
+
+.myAddressContainer form .btnContainer input{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.myAddressContainer form .hr{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.myAddressContainer form .passwordContainer{
+    width: 100%;
+    position: relative;
+}
+
+.myAddressContainer form .passwordContainer .title{
+    font-size: 1.4em;
+    font-family: var(--font-Montserrat);
+    margin-bottom: 50px;
+}
+
+.myAddressContainer form .passwordContainer > div{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.myAddressContainer form .passwordContainer > div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    transition:var(--transition);
+}
+
+.myAddressContainer form .passwordContainer > div input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.myAddressContainer form .passwordContainer > div span{
+    position: absolute;
+    top: -15px;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.myAddressContainer form .passwordContainer > div #icon,
+.myAddressContainer form .cPassword #icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}

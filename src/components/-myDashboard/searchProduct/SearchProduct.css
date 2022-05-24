@@ -1,0 +1,142 @@
+.searchProductContainer{
+    width: 100%;
+    padding:20px 40px;
+}
+
+.searchProductContainer .heading{
+    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchProductContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.searchProductContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-size: 0.8em;
+    color: var(--color-grey);
+}
+
+.searchProductContainer .searchBx{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.searchProductContainer .searchBx input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid var(--color-black);
+    outline: none;
+    padding: 0 10px;
+    font-family: var(--font-Montserrat);
+}
+
+.searchProductContainer .searchBx a{
+    background: var(--color-black);
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.searchProductContainer .getDataContainer{
+    width: 100%;
+}
+
+.searchProductContainer .getDataContainer > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.searchProductContainer .getDataContainer > div h1#active{
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    font-family: var(--font-Merriweather);
+    font-weight: 300;
+}
+
+.searchProductContainer .getDataContainer .subImgContainer{
+    margin: 40px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchProductContainer .getDataContainer .subImgContainer > div{
+    width: 60px;
+    height: 60px;
+    margin:10px 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.searchProductContainer .getDataContainer .subImgContainer > div:hover{
+    border: 2px solid var(--color-grey);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.searchProductContainer .getDataContainer .imgBx{
+    width: 280px !important;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.searchProductContainer .getDataContainer .imgBx img,
+.searchProductContainer .getDataContainer .subImgContainer > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.searchProductContainer .getDataContainer .detailsContainer{
+    text-align: center;
+    margin-right:40px ;
+    max-width: 340px;
+    
+}
+
+.searchProductContainer .getDataContainer .detailsContainer h1{
+    font-size: 2.5em;
+    font-weight: 300;
+    max-width: 500px;
+    font-family: var(--font-Montserrat);
+    text-transform: capitalize;
+}
+
+.searchProductContainer .getDataContainer .detailsContainer p{
+    font-size: 0.9em;
+    color: var(--color-grey);
+    font-weight: 300;
+    margin: 10px;
+    font-family: var(--font-Montserrat);
+}
+
+.searchProductContainer .getDataContainer .detailsContainer a{
+    font-size: 0.8em;
+    font-family: var(--font-Montserrat);
+}
+
+.searchProductContainer .getDataContainer .detailsContainer a span{
+    margin: 0 5px;
+    font-size: 1.2em;
+}

@@ -1,0 +1,221 @@
+.wishlistContainer{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.wishlistContainer .goBack{
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wishlistContainer .goBack a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlistContainer .goBack a div .icon{
+    margin-right: 10px;
+}
+
+.wishlistContainer .goBack a div  h4{
+    font-weight: 200;
+    height: 100%;
+}
+
+.wishlistContainer .goBack a div:hover  h4{
+    text-decoration: underline;
+}
+
+.wishlistContainer .heading{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.wishlistContainer > .productContainerz{
+    width: 100%;
+    height: auto !important;
+    position: relative;
+    display: grid;
+    padding: 0 100px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px;
+    gap: 20px;
+}
+
+.wishlistContainer > .productContainerz#active{
+    display: flex;
+    width: 100%;
+    height: auto !important;
+}
+
+.wishlistContainer .productContainerz > div{
+    position: relative;
+}
+
+.wishlistContainer .productContainerz > div .qView{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wishlistContainer .productContainerz > div .qView img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.wishlistContainer .productContainerz > div .qView .deletePrd{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+
+.wishlistContainer .productContainerz > div  .qView .view{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background: var(--color-white);
+    display: none;
+    transition: var(--transition);
+}
+
+.wishlistContainer .productContainerz > div  .qView:hover .view{
+    display: block;
+}
+
+.wishlistContainer .productContainerz > div  .qView .view button{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--color-black);
+    outline: none;
+    cursor: pointer;
+}
+
+.wishlistContainer .productContainerz > div  .qView .view  > button Link{
+    color: var(--color-black);
+}
+
+.wishlistContainer .productContainerz > div .qView .orderPrd{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.wishlistContainer .productContainerz > div .qView .orderPrd .sizeContainer{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    padding:5px;
+    height: 30px;
+    background: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wishlistContainer .productContainerz > div .qView .orderPrd .sizeContainer span{
+    height: 100%;
+    width: 35px;
+    border: 1px solid var(--color-black);
+    padding: 2px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlistContainer .productContainerz > div .qView:hover .orderPrd{
+    z-index: 1000;
+    position: absolute;
+    bottom: 90px;
+
+}
+
+.wishlistContainer .productContainerz > div .iDetails{
+    width: 100%;
+    height: calc(550px - 450px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding:15px 10px;
+    width: 100%;
+}
+
+.wishlistContainer .productContainerz > div .iDetails h4{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.wishlistContainer .productContainerz > div .iDetails h5{
+    font-weight: 400;
+}
+
+.wishlistContainer .productContainerz > div .iDetails p{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.wishlistContainer .productContainerz > div .iDetails p span{
+    font-family: var(--font-Montserrat);
+    margin-right: 2px;
+}
+
+.wishlistContainer .emptyPrdContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wishlistContainer .emptyPrdContainer h1{
+    font-family: var(--font-Merriweather);
+    color: var(--color-black);
+}
+
+.wishlistContainer .emptyPrdContainer p{
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.wishlistContainer .emptyPrdContainer button{
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    background: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+    font-family: var(--font-Montserrat);
+}   

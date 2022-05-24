@@ -1,0 +1,144 @@
+.registerContainer{
+    width: 100%;
+    position: relative;
+}
+
+.registerContainer h2{
+    font-family: var(--font-Merriweather);
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.registerContainer h4{
+    font-family: var(--font-Montserrat);
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.registerContainer form{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.registerContainer form{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.registerContainer form > .input,
+.registerContainer form > .oInput
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.registerContainer form > .input .icon,
+.registerContainer form > .oInput .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.registerContainer form > .oInput{
+    border: 1px solid var(--color-grey);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.registerContainer form > .oInput input{
+    margin-right: 5px;
+    background: var(--color-black);
+}
+
+
+.registerContainer form > .oInput input:last-child{
+    margin-left: 10px;
+}
+
+.registerContainer form > .input#active{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.registerContainer form > .input#active > div{
+    position: relative;
+}
+
+.registerContainer form > .input:nth-child(1),
+.registerContainer form > .input:nth-child(2),
+.registerContainer form > .input:nth-child(3),
+.registerContainer form > .oInput,
+.registerContainer form > .input:nth-child(4)
+{
+    margin-bottom: 20px;
+}
+
+.registerContainer form .input h5,
+.registerContainer form .oInput h5
+{
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    font-size: 0.8em;
+    font-weight: 200;
+    padding: 5px;
+    background: var(--color-white);
+
+
+}
+
+.registerContainer form .input input{
+    width: 100%;
+    padding: 10px 8px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--color-grey);
+    transition: var(--transition);
+    height: 100%;
+    width: 100%;
+}
+
+.registerContainer form .input input:focus{
+    border-color:var(--color-black);
+}
+
+.registerContainer form input[type="submit"]{
+    display: block;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-Montserrat);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.registerContainer form p{
+    font-size: 0.8em;
+    font-weight: 200;
+    color: var(--color-error);
+}
+
+.registerContainer .oLinks{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.registerContainer .oLinks a{
+    text-decoration: underline;
+    font-size: 0.8em;
+    cursor: pointer;
+}

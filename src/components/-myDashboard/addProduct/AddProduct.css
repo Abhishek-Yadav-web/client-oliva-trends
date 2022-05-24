@@ -1,0 +1,292 @@
+.addProductContainer{
+    width: 100%;
+    padding:20px 40px;
+}
+
+.addProductContainer .heading{
+    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.addProductContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.addProductContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-size: 0.8em;
+    color: var(--color-grey);
+}
+
+.addProductContainer form .inputDetailsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.addProductContainer form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.addProductContainer form .inputDetails,
+.addProductContainer form  .otherDetails
+{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.addProductContainer form  .otherDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.addProductContainer form  .otherDetails #set{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.addProductContainer form .inputDetails span
+{
+    position: absolute;
+    top: -20px ;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.addProductContainer form .inputDetails a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    font-family: var(--font-Montserrat);
+    font-weight: 200;
+    right: -40px;
+    cursor: pointer;
+}
+
+.addProductContainer form .inputDetails input,
+.addProductContainer form .inputDetails select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    padding: 0 5px;
+    transition:var(--transition);
+}
+
+.addProductContainer form .inputDetails input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.addProductContainer form .inputDetails.change #cBtn,
+.addProductContainer form .inputDetails.change .cPassword  #uBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    cursor: pointer;
+    color: var(--color-black);
+    text-transform: uppercase;
+    width: 50px;
+}
+
+.addProductContainer form .inputDetails.change{
+    margin-bottom: 100px;
+}
+
+.addProductContainer form .inputDetails.change .cPassword{
+    margin-top: 40px;
+    position: relative;
+}
+
+.addProductContainer form .radioDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addProductContainer form .radioDetails input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.addProductContainer form .radioDetails a{
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.addProductContainer form .btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.addProductContainer form .btnContainer .btn,
+.addProductContainer form .btnContainer input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.addProductContainer form .btnContainer .btn{
+    border: 1px solid var(--color-black);
+    background: transparent;
+}
+
+.addProductContainer form .btnContainer input{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.addProductContainer form .hr{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.addProductContainer form .passwordContainer{
+    width: 100%;
+    position: relative;
+}
+
+.addProductContainer form .passwordContainer .title{
+    font-size: 1.4em;
+    font-family: var(--font-Montserrat);
+    margin-bottom: 50px;
+}
+
+.addProductContainer form .passwordContainer > div{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.addProductContainer form .passwordContainer > div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    transition:var(--transition);
+}
+
+.addProductContainer form .passwordContainer > div input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.addProductContainer form .passwordContainer > div span{
+    position: absolute;
+    top: -15px;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.addProductContainer form .passwordContainer > div #icon,
+.addProductContainer form .cPassword #icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.addProductContainer form .imgaeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addProductContainer form .sizeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.addProductContainer form .sizeContainer .sizeBx{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.8em;
+    margin: 0 5px;
+}
+
+.addProductContainer form .imgaeContainer .imgBx{
+    width: 120px;
+    height: 150px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative !important;
+}
+
+.addProductContainer form .imgaeContainer .imgBx span,
+.addProductContainer form .sizeContainer .sizeBx span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--color-white);
+    top: -15px;
+    right: -15px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: var(--transition);
+    cursor: pointer;
+    display: none;
+}
+
+.addProductContainer form .sizeContainer .sizeBx:hover span{
+    display: flex;
+}
+
+.addProductContainer form .imgaeContainer .imgBx:hover span{
+    display: flex;
+}
+
+.addProductContainer form .imgaeContainer .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.addProductContainer form .sizeContainer .sizeBx span {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+}

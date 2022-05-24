@@ -1,0 +1,11 @@
+.pathContainer{
+    display: block;
+    padding: 20px 0;
+}
+
+.pathContainer .path{
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: 300;
+    word-spacing: 5px;
+}

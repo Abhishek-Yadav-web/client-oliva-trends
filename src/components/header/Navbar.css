@@ -1,0 +1,12 @@
+.navbarContainer{
+    width: 100%;
+    position: relative;
+    transition: var(--transition);
+}
+
+.navbarContainer#sticky{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+}

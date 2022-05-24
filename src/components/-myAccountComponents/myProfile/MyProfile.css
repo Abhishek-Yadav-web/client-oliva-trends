@@ -1,0 +1,233 @@
+.myProfileContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myProfileContainer .heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.myProfileContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-weight: 200;
+    font-size:2.5em ;
+}
+
+.myProfileContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-weight: 200;
+}
+
+.myProfileContainer #error,
+.myProfileContainer #success{
+    position: sticky;
+    top: 200px;
+    left: 100%;
+    transform: translate(-50%);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    height: 40px;
+    font-weight: 200;
+    font-size: 0.8em;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 100;
+}
+
+.myProfileContainer #error{
+    color: var(--color-error);
+    background: var(--color-error-bg);
+}
+
+.myProfileContainer #success{
+    color: var(--color-success);
+    background: var(--color-success-bg) !important;
+}
+
+.myProfileContainer form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.myProfileContainer form .inputDetails,
+.myProfileContainer form  .otherDetails
+{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.myProfileContainer form  .otherDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.myProfileContainer form  .otherDetails #set{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.myProfileContainer form .inputDetails span
+{
+    position: absolute;
+    top: -20px ;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.myProfileContainer form .inputDetails input,
+.myProfileContainer form .inputDetails select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    padding: 0 5px;
+    transition:var(--transition);
+}
+
+.myProfileContainer form .inputDetails input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.myProfileContainer form .inputDetails.change #cBtn,
+.myProfileContainer form .inputDetails.change .cPassword  #uBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    cursor: pointer;
+    color: var(--color-black);
+    text-transform: uppercase;
+    width: 50px;
+}
+
+.myProfileContainer form .inputDetails.change{
+    margin-bottom: 100px;
+}
+
+.myProfileContainer form .inputDetails.change .cPassword{
+    margin-top: 40px;
+    position: relative;
+}
+
+.myProfileContainer form .radioDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.myProfileContainer form .radioDetails input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.myProfileContainer form .radioDetails a{
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.myProfileContainer form .btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.myProfileContainer form .btnContainer .btn,
+.myProfileContainer form .btnContainer input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.myProfileContainer form .btnContainer .btn{
+    border: 1px solid var(--color-black);
+    background: transparent;
+}
+
+.myProfileContainer form .btnContainer input{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.myProfileContainer form .hr{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.myProfileContainer form .passwordContainer{
+    width: 100%;
+    position: relative;
+}
+
+.myProfileContainer form .passwordContainer .title{
+    font-size: 1.4em;
+    font-family: var(--font-Montserrat);
+    margin-bottom: 50px;
+}
+
+.myProfileContainer form .passwordContainer > div{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.myProfileContainer form .passwordContainer > div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    transition:var(--transition);
+}
+
+.myProfileContainer form .passwordContainer > div input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.myProfileContainer form .passwordContainer > div span{
+    position: absolute;
+    top: -15px;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.myProfileContainer form .passwordContainer > div #icon,
+.myProfileContainer form .cPassword #icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}

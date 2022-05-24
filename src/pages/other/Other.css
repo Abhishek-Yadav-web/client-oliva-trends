@@ -1,0 +1,43 @@
+.otherContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0, 0, 0, .2);
+}
+
+.otherContainer .holder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    padding-top: 100px;
+    background: var(--color-white);
+    width: 400px;
+}
+
+.otherContainer .holder .close{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50px;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.otherContainer .holder .close .icon{
+    font-size: 2em;
+    transition: var(--transition);
+}
+
+.otherContainer .holder .close:hover .icon{
+    transform: rotate(180deg);
+}

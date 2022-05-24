@@ -1,0 +1,38 @@
+.topNavbarContainer{
+    padding: 0 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--color-white);
+}
+
+.topNavbarContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topNavbarContainer div a {
+    margin: 0 10px;
+    font-size: 0.8em;
+    font-family: var(--font-Montserrat);
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.topNavbarContainer div a.active,
+.topNavbarContainer div a.active:hover{
+    text-decoration: none;
+    cursor: text;
+}
+
+.topNavbarContainer div a:hover{
+    text-decoration: underline;
+}
+
+.topNavbarContainer div a:last-child{
+    padding: 8px;
+    background: var(--color-blue);
+    color: var(--color-white);
+}

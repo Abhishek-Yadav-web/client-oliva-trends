@@ -1,0 +1,52 @@
+.allOrdersContainer{
+    width: 100%;
+    padding:20px 40px;
+}
+
+.allOrdersContainer .heading{
+    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.allOrdersContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.allOrdersContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-size: 0.8em;
+    color: var(--color-grey);
+}
+
+.allOrdersContainer .tableContainer{
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--color-black);
+}
+
+.allOrdersContainer .tableContainer > div{
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+}
+
+.allOrdersContainer .tableContainer > div > div{
+    border: 1px solid var(--color-grey);
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    font-size: 0.8em;
+    font-family: var(--font-Montserrat);
+    text-transform: capitalize;
+}
+
+.allOrdersContainer .tableContainer .tableHeader > div{
+    background: var(--color-light-grey);
+    font-size: 1em;
+}

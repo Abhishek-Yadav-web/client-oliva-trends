@@ -1,0 +1,140 @@
+.myOrdersContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myOrdersContainer  .emptyOrders{
+    text-align: center;
+}
+
+.myOrdersContainer .emptyOrders .title{
+    font-family: var(--font-Merriweather);
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.myOrdersContainer .emptyOrders .message{
+    font-family: var(--font-Montserrat);
+    color: var(--color-grey);
+    margin-bottom: 25px;
+}
+
+.myOrdersContainer .emptyOrders .btn{
+    padding:15px 30px;
+    border: none;
+    outline: none;
+    background: var(--color-black);
+    color: var(--color-white);
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.myOrdersContainer .ordersContainer {
+    width: 100%;
+    position: relative;
+}
+
+.myOrdersContainer .ordersContainer .heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.myOrdersContainer .ordersContainer .reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.myOrdersContainer .ordersContainer .orders{
+    padding: 60px 20px;
+    position: relative;
+    border: 1px solid var(--color-light-grey);
+    margin-bottom: 40px;
+}
+
+.myOrdersContainer .ordersContainer .orders .date{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 0.8em;
+    background: var(--color-white);
+    color: var(--color-grey);
+}
+
+.myOrdersContainer .ordersContainer .ordersItem{
+    width: 100%;
+    height: 150px;
+    border: 1px solid var(--color-grey);
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+
+.myOrdersContainer .ordersContainer#active .ordersItem{
+    margin-bottom: 40px;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem a.orId{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: var(--color-grey);
+    font-size: 0.8em;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem a.orId span{
+    text-transform: uppercase;
+    color: var(--color-grey);
+}
+
+.myOrdersContainer .ordersContainer .ordersItem .imgBx{
+    width: 100px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem .imgBx img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem nav{
+    display: block;
+}
+
+
+.myOrdersContainer .ordersContainer .ordersItem nav h4{
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 220px;
+    overflow: hidden;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem nav p{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem nav p span{
+    font-weight: 200 !important;
+    font-size: 0.9em !important;
+}
+
+.myOrdersContainer .ordersContainer .ordersItem .view{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}

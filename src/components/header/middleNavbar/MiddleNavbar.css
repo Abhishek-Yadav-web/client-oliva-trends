@@ -1,0 +1,82 @@
+.middleNavbarContainer{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-white);
+}
+
+.middleNavbarContainer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleNavbarContainer img{
+    height: 60px;
+    cursor: pointer;
+}
+
+.middleNavbarContainer > div:last-child .searchBx{
+    background: var(--color-black);
+    width: 250px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 1px;
+    display: flex;
+}
+
+.middleNavbarContainer > div:last-child .searchBx input{
+    width: 80%;
+    height: 100%;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    background: var(--color-white);
+}
+
+.middleNavbarContainer > div:last-child .searchBx span{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleNavbarContainer > div:last-child .searchBx span .searchIcon{
+    filter: invert(1);
+}
+
+.middleNavbarContainer > div a{
+    position: relative;
+}
+
+.middleNavbarContainer > div:last-child a{
+    margin: 0 10px;
+    font-size: 1.4em;
+} 
+
+
+.middleNavbarContainer > div a .proNo{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    padding: 8px;
+    border-radius: 50px;
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-family: var(--font-Montserrat);
+    font-size: 0.5em;
+    overflow: hidden;
+}
+
+
+.middleNavbarContainer > div a .proNo#active{
+    display: none;
+}

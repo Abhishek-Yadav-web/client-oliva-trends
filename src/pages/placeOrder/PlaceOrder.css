@@ -1,0 +1,197 @@
+.placeOrderContainer{
+    width: 100%;
+    position: relative;
+    padding: 0 100px;
+}
+
+.placeOrderContainer .heading{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.placeOrderContainer .placeOrderContainerDiv{
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    gap:20px ;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails{
+    border: 1px solid var(--color-black);
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .divHeading{
+    padding:40px 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: var(--font-Merriweather);
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div{
+    width: 100%;
+    padding: 10px 60px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div#firstDiv{
+    margin-bottom: 20px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div .key{
+    font-family: var(--font-Montserrat);
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--color-black);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div .value{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 0.9em;
+    color: var(--color-black);
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div .cartItem{
+    width: 100%;
+    padding: 10px !important;
+    border: 1px solid var(--color-grey);
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div .cartItem .imgBx{
+    width: 120px;
+    height: 150px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails > div .cartItem .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .cartItem .proDetails{
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .cartItem .proDetails .prdName{
+    display: inline-flex;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .cartItem .priceDetails{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .cartItem .priceDetails a{
+    color: var(--color-grey);
+    font-family: var(--font-Montserrat);
+}
+
+.placeOrderContainer .placeOrderContainerDiv .placeOrderDetails .cartItem .priceDetails a span{
+    color: var(--color-black);
+    font-weight: 500;
+    font-family: var(--font-Montserrat);
+}
+
+/* total */
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer{
+    width: 100%;
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .totalContainerDiv{
+    width: 100%;
+    background: var(--color-light-grey);
+    padding: 20px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .totalContainerDiv h3{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .totalContainerDiv div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .totalContainerDiv div p{
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: var(--font-Montserrat);
+}
+
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .totalContainerDiv div p.total{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.placeOrderContainer .placeOrderContainerDiv .totalContainer .btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.placeOrderContainer .emptyPrdContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.placeOrderContainer .emptyPrdContainer h1{
+    font-family: var(--font-Merriweather);
+    color: var(--color-black);
+}
+
+.placeOrderContainer .emptyPrdContainer p{
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.placeOrderContainer .emptyPrdContainer button{
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    background: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+    font-family: var(--font-Montserrat);
+}   

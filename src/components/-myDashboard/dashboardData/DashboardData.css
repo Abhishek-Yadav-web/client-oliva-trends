@@ -1,0 +1,89 @@
+.dashboardDataContainer{
+    width: 100% ;
+    position: relative;
+}
+
+.dashboardDataContainer .heading{
+    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.dashboardDataContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.dashboardDataContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-size: 0.8em;
+    color: var(--color-grey);
+}
+
+.dashboardDataContainer .totalPrice{
+    width: 100%;
+    background: var(--color-grey);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboardDataContainer .totalPrice h3{
+    font-weight: 200;
+    color: var(--color-white);
+    font-family: var(--font-Montserrat);
+}
+
+.dashboardDataContainer .allTotal{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardDataContainer .allTotal > div{
+    width: 250px;
+    height: 250px;
+    border: 1px solid var(--color-grey);
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dashboardDataContainer .allTotal > div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--color-black);
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.dashboardDataContainer .allTotal > div > div{
+    text-align: center;
+    display: block;
+}
+
+.dashboardDataContainer .allTotal > div > div a{
+    display: block;
+    font-size: 1.4em;
+    color: var(--color-black);
+    font-weight: 600;
+    font-family: var(--font-Montserrat);
+    margin-bottom: 10px;
+}
+
+.dashboardDataContainer .allTotal > div > div span{
+    font-weight: 600;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.643);
+    font-family: var(--font-Montserrat);
+}

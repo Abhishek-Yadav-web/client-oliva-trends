@@ -1,0 +1,330 @@
+.updateProductContainer{
+    width: 100%;
+    padding:20px 40px;
+}
+
+.updateProductContainer .heading{
+    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.updateProductContainer .heading h1{
+    font-family: var(--font-Merriweather);
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.updateProductContainer .heading p{
+    font-family: var(--font-Montserrat);
+    font-size: 0.8em;
+    color: var(--color-grey);
+}
+
+
+.updateProductContainer .searchBx{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.updateProductContainer .searchBx input{
+    width: 300px;
+    height: 50px;
+    border: 1px solid var(--color-black);
+    outline: none;
+    padding: 0 10px;
+    font-family: var(--font-Montserrat);
+}
+
+.updateProductContainer .searchBx a{
+    background: var(--color-black);
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.updateProductContainer form .inputDetailsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.updateProductContainer form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.updateProductContainer form .inputDetails,
+.updateProductContainer form  .otherDetails
+{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.updateProductContainer form  .otherDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.updateProductContainer form  .otherDetails #set{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.updateProductContainer form .inputDetails span
+{
+    position: absolute;
+    top: -20px ;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.updateProductContainer form .inputDetails a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    font-family: var(--font-Montserrat);
+    font-weight: 200;
+    right: -40px;
+    cursor: pointer;
+}
+
+.updateProductContainer form .inputDetails a.active{
+    right: 15px;
+}
+
+
+.updateProductContainer form .inputDetails input,
+.updateProductContainer form .inputDetails select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    padding: 0 5px;
+    transition:var(--transition);
+}
+
+.updateProductContainer form .inputDetails input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.updateProductContainer form .inputDetails.change #cBtn,
+.updateProductContainer form .inputDetails.change .cPassword  #uBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    cursor: pointer;
+    color: var(--color-black);
+    text-transform: uppercase;
+    width: 50px;
+}
+
+.updateProductContainer form .inputDetails.change{
+    margin-bottom: 100px;
+}
+
+.updateProductContainer form .inputDetails.change .cPassword{
+    margin-top: 40px;
+    position: relative;
+}
+
+.updateProductContainer form .radioDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.updateProductContainer form .radioDetails input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.updateProductContainer form .radioDetails a{
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.updateProductContainer form .btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.updateProductContainer form .btnContainer .btn,
+.updateProductContainer form .btnContainer input{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.updateProductContainer form .btnContainer .btn{
+    border: 1px solid var(--color-black);
+    background: transparent;
+}
+
+.updateProductContainer form .btnContainer input{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.updateProductContainer form .hr{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.updateProductContainer form .passwordContainer{
+    width: 100%;
+    position: relative;
+}
+
+.updateProductContainer form .passwordContainer .title{
+    font-size: 1.4em;
+    font-family: var(--font-Montserrat);
+    margin-bottom: 50px;
+}
+
+.updateProductContainer form .passwordContainer > div{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.updateProductContainer form .passwordContainer > div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    outline: none;
+    transition:var(--transition);
+}
+
+.updateProductContainer form .passwordContainer > div input:focus{
+    border-bottom-color: var(--color-black);
+}
+
+.updateProductContainer form .passwordContainer > div span{
+    position: absolute;
+    top: -15px;
+    font-size: 0.8em;
+    color: var(--color-grey);
+    font-weight: 200;
+}
+
+.updateProductContainer form .passwordContainer > div #icon,
+.updateProductContainer form .cPassword #icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.updateProductContainer form .imgaeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updateProductContainer form .sizeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.updateProductContainer form .sizeContainer .sizeBx{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.8em;
+    margin: 0 5px;
+}
+
+.updateProductContainer form .imgaeContainer .imgBx{
+    width: 120px;
+    height: 150px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative !important;
+}
+
+.updateProductContainer form .imgaeContainer .imgBx span,
+.updateProductContainer form .sizeContainer .sizeBx span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--color-white);
+    top: -15px;
+    right: -15px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: var(--transition);
+    cursor: pointer;
+    display: none;
+}
+
+.updateProductContainer form .sizeContainer .sizeBx:hover span{
+    display: flex;
+}
+
+.updateProductContainer form .imgaeContainer .imgBx:hover span{
+    display: flex;
+}
+
+.updateProductContainer form .imgaeContainer .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.updateProductContainer form .sizeContainer .sizeBx span {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+}

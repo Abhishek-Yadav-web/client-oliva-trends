@@ -1,0 +1,10 @@
+.sWorkOnItContainer{
+    width: 100%;
+    position: relative;
+}
+
+.sWorkOnItContainer img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

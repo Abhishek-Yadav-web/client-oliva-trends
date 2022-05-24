@@ -1,0 +1,50 @@
+/* GOOGLE FONTS - LINK */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ROOT */
+:root{
+    --font-Merriweather : 'Merriweather', serif;
+    --font-Montserrat : 'Montserrat', sans-serif;
+    --font-Poppins : 'Poppins', sans-serif;
+
+    --transition : all 1s ease;
+
+    --color-white : #fff;
+    --color-black : #111;
+    --color-blue : #496379;
+    --color-grey : #ccc;
+    --color-light-grey : #eee;
+
+    --color-error : #D8000C;
+    --color-error-bg : #FFD2D2;
+    --color-success : 	#4F8A10;
+    --color-success-bg : #DFF2BF;
+    --color-info : #00529B;
+    --color-warning: #9F6000;
+
+}
+
+/* UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Poppins);
+    color: var(--color-black);
+}
+
+/* PRE-DEFIEND */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* WEB-CONTAINER */
+.webContainer{
+    width: 100%;
+    min-height:100vh;
+    position: relative;
+}

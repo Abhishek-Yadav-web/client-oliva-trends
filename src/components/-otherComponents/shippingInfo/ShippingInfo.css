@@ -1,0 +1,131 @@
+.shippingInfoContainer{
+    width: 100%;
+    position: relative;
+}
+
+.shippingInfoContainer h2{
+    font-family: var(--font-Merriweather);
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.shippingInfoContainer h4{
+    font-family: var(--font-Montserrat);
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.shippingInfoContainer form{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.shippingInfoContainer form > .input,
+.shippingInfoContainer form > .select{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--color-black);
+    margin-bottom: 30px;
+}
+
+.shippingInfoContainer form > .input#phoneNo a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.shippingInfoContainer form > .input#phoneNo {
+    padding-left: 30px;
+}
+
+.shippingInfoContainer form > .select{
+    padding-right: 10px;
+}
+
+.shippingInfoContainer form > .input .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.shippingInfoContainer form > .input:nth-child(1){
+    margin-bottom: 10%;
+}
+
+.shippingInfoContainer form .input h5,
+.shippingInfoContainer form > .select h5{
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    font-size: 0.8em;
+    font-weight: 200;
+    padding: 5px;
+    background: var(--color-white);
+    z-index: 100;
+
+
+}
+
+.shippingInfoContainer form .input input,
+.shippingInfoContainer form .select select{
+    width: 100%;
+    padding: 10px 8px;
+    outline: none;
+    border: none;
+    transition: var(--transition);
+    height: 100%;
+    width: 100%;
+}
+
+.shippingInfoContainer form .input input:focus{
+    border-color:var(--color-black);
+}
+
+.shippingInfoContainer form input[type="submit"]{
+    display: block;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-Montserrat);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.shippingInfoContainer form input[type="submit"].active{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.shippingInfoContainer form p{
+    font-size: 0.8em;
+    font-weight: 200;
+    color: var(--color-error);
+}
+
+.shippingInfoContainer .oLinks{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.shippingInfoContainer .oLinks a{
+    text-decoration: underline;
+    font-size: 0.8em;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.productContainer{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 80px;
+}
+
+.productContainer .headingContainer{
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+ 
+.mainContentContainer{
+    width: 100%;
+    min-height: 100vh;
+    border-top: 1px solid var(--color-grey);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    gap: 10px;
+}
