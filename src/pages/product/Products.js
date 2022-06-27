@@ -8,10 +8,6 @@ import Path from '../../components/path/Path'
 import Filter from '../../components/-productsComponents/filter/Filter'
 import ProductList from '../../components/-productsComponents/productList/ProductList'
 import Loader from '../../components/loader/Loader'
-import {toast} from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
-toast.configure();
 
 const Product = () => {
   const dispatch = useDispatch();
@@ -26,7 +22,6 @@ const Product = () => {
 
   useEffect(() => {
     if(error){
-      toast.error(error)
       dispatch(clearErrors())
     }
     dispatch(getProducts(quries,isAuthenticated))

@@ -9,6 +9,7 @@ export const getProducts = (quries,auth) => async(dispatch) => {
         })
 
         const {data} = await axios.get(`/api/v1/products?${quries}`);
+        
         const wProducts = auth ? await axios.get(`/api/v1/wishlist`) : [];
         
         dispatch({

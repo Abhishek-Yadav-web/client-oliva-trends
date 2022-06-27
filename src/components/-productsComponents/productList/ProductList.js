@@ -37,6 +37,7 @@ const ProductList = ({items,productCounts}) => {
         <div className="itemContainer">
           {
             items?.map((e,i) => {
+              console.log(e);
               const discriptionTemp = e.description
               const description = discriptionTemp.slice(0,35);
               return(
@@ -45,7 +46,7 @@ const ProductList = ({items,productCounts}) => {
                     <div className="qView">
                       <img src={e.images[0].url} alt={e.name} />
                       <div className='view'><Link to={`/product/${e._id}`}><button>Quick View</button></Link></div>
-                      {e?.wishlist ? <span onClick={() => {removeFromWishlistFun(e._id)}}><AiFillHeart className='icon' /></span> : <span onClick={() => {addInWishlistFun(e._id)}}><AiOutlineHeart className='icon'/></span>}
+                      {/* {e?.wishlist ? <span onClick={() => {removeFromWishlistFun(e._id)}}><AiFillHeart className='icon' /></span> : <span onClick={() => {addInWishlistFun(e._id)}}><AiOutlineHeart className='icon'/></span>} */}
                     </div>
                     <div className="iDetails">
                       <div>
